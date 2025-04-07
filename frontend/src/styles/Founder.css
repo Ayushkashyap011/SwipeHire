@@ -1,0 +1,74 @@
+.founder-section {
+    padding: 80px 10%;
+    background: linear-gradient(90deg, #000000, #1a1a1a, #2a2a2a);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .founder-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #eee;
+  }
+  
+  .founders-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .founder-card {
+    background: #1a1a1a;
+    padding: 30px 20px;
+    border-radius: 16px;
+    max-width: 280px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .founder-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .founder-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #444;
+  }
+  
+  .founder-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #ccc;
+  }
+  
+  .founder-role {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  
+  .founder-quote {
+    font-size: 0.95rem;
+    color: #888;
+    font-style: italic;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 768px) {
+    .founders-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .founder-card {
+      width: 90%;
+      max-width: 320px;
+    }
+  }
+  

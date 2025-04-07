@@ -1,0 +1,28 @@
+.company-section {
+    background: linear-gradient(90deg, #000000, #1a1a1a, #2a2a2a);
+    padding: 60px 5%;
+    text-align: center;
+    color: white;
+  }
+  
+  .company-heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+  
+  .company-logos-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .company-logos-image {
+    background-color: white;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  }
+  

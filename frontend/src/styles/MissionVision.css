@@ -1,0 +1,45 @@
+.mission-vision-section {
+  background: linear-gradient(90deg, #000000, #1a1a1a, #2a2a2a);
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 80px 10%;
+    background-color: #111;
+    flex-wrap: wrap;
+  }
+  
+  .mv-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+    background: #1e1e1e;
+    color: #eee;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .mv-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .mv-card p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  .mv-card:hover {
+    background: #fff;
+    color: #111;
+    transform: translateY(-10px);
+  }
+  
+  .mv-card:hover h2,
+  .mv-card:hover p {
+    color: #111;
+  }
+  

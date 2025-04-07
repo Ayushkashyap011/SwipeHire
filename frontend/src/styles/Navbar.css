@@ -1,0 +1,98 @@
+/* Navbar base */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background: linear-gradient(90deg, #000000, #1a1a1a, #2a2a2a);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Logo */
+.navbar-logo img {
+  height: 65px;
+  object-fit: contain;
+}
+
+/* Desktop links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+/* Link items */
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #b3b3b3;
+}
+
+.navbar-links li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #b3b3b3;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-links li:hover::after {
+  width: 100%;
+}
+
+/* Hamburger menu icon (only visible on small screens) */
+.navbar-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* ========================= */
+/* RESPONSIVE STYLES 🔥 */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    width: 100%;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: #111;
+    padding: 1.5rem 2rem;
+    display: none;
+    border-top: 1px solid #333;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links a {
+    font-size: 1rem;
+  }
+}

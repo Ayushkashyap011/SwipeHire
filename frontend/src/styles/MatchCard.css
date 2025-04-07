@@ -1,0 +1,59 @@
+.match-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .match-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .match-left h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+    color: #ffffff;
+  }
+  
+  .match-left p {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+  
+  .location {
+    font-style: italic;
+    color: #888;
+  }
+  
+  .match-right {
+    text-align: right;
+  }
+  
+  .match-percent {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4ade80; /* green vibe */
+    margin-bottom: 0.5rem;
+  }
+  
+  .match-btn {
+    padding: 0.5rem 1rem;
+    background-color: #6d28d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .match-btn:hover {
+    background-color: #7c3aed;
+  }
+  

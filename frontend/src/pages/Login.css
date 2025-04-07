@@ -1,0 +1,103 @@
+.login-wrapper {
+    background: #000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .login-glass {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 50px 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.03);
+  }
+  
+  .login-glass h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #eee;
+  }
+  
+  .tagline {
+    font-size: 0.95rem;
+    color: #aaa;
+    margin-bottom: 30px;
+  }
+  
+  .login-glass form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .login-glass input {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 12px;
+    background: #1a1a1a;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .login-glass input::placeholder {
+    color: #888;
+  }
+  
+  .login-glass input:focus {
+    outline: 2px solid #666;
+  }
+  
+  .show-password {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #bbb;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+  }
+  
+  .login-glass button {
+    background: linear-gradient(to right, #444, #999);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .login-glass button:hover {
+    background: linear-gradient(to right, #666, #ccc);
+    transform: scale(1.03);
+  }
+  
+  .alt-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 25px;
+    font-size: 0.85rem;
+  }
+  
+  .alt-links a {
+    color: #bbb;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+  
+  .alt-links a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,122 @@
+.footer {
+    background: linear-gradient(90deg, #000000, #1a1a1a, #2a2a2a);
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-social-box {
+    background-color: #eee;
+    color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .footer-social-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .footer-social-box p {
+    margin: 10px 0 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 24px;
+  }
+  
+  .icon {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .facebook { color: #4267B2; }
+  .whatsapp { color: #25D366; }
+  .instagram {
+    background: linear-gradient(to right, #feda75, #d62976, #962fbf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .linkedin { color: #0077B5; }
+  
+  .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .brand-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .brand-logo span {
+    color: #ff4f5a;
+  }
+  
+  .footer-section p {
+    margin-top: 10px;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  .subscribe {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .subscribe input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    flex: 1;
+    border-radius: 4px;
+  }
+  
+  .subscribe button {
+    background: #ff4f5a;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .subscribe button:hover {
+    background: #e63b4d;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #ccc;
+  }
+  
+  .links li:hover {
+    color: white;
+  }
+  

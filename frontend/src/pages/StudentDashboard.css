@@ -1,0 +1,190 @@
+:root {
+    --bg-dark: #0d0d0d;
+    --gray-dark: #1a1a1a;
+    --gray-mid: #333;
+    --gray-light: #ccc;
+    --white: #fff;
+    --accent: #888; /* You can change to a hint of purple/blue for accents */
+  }
+  
+  .student-dashboard {
+    display: flex;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--white);
+  }
+  
+  /* Sidebar */
+  .dashboard-sidebar {
+    width: 230px;
+    background-color: var(--gray-dark);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 1px solid var(--gray-mid);
+  }
+  
+  .sidebar-logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  
+  .sidebar-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .sidebar-nav li {
+    font-size: 1rem;
+    color: var(--gray-light);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .sidebar-nav li:hover {
+    color: var(--white);
+  }
+  
+  /* Main Section */
+  .dashboard-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Top Bar */
+  .dashboard-topbar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gray-dark);
+    padding: 0 2rem;
+    border-bottom: 1px solid var(--gray-mid);
+  }
+  
+  .dashboard-topbar input {
+    background-color: var(--gray-mid);
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    color: var(--white);
+    width: 300px;
+  }
+  
+  .dashboard-topbar input::placeholder {
+    color: var(--gray-light);
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--white);
+  }
+  
+  .user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--gray-mid);
+  }
+  
+  /* Main Content */
+  .dashboard-content {
+    padding: 2rem;
+  }
+  
+  .dashboard-content h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Chat Panel */
+  .dashboard-chat {
+    width: 300px;
+    background-color: var(--gray-dark);
+    padding: 1rem;
+    border-left: 1px solid var(--gray-mid);
+    overflow-y: auto;
+  }
+  
+  .dashboard-chat h3 {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .profile-update-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #111; /* Match dark theme */
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  .profile-update-form h2 {
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  .profile-update-form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+  }
+  
+  .profile-update-form input[type="text"],
+  .profile-update-form input[type="file"],
+  .profile-update-form input[type="password"],
+  .profile-update-form select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #222;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .profile-update-form input::file-selector-button {
+    background-color: #444;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  .profile-update-form .social-icons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .profile-update-form .social-icons i {
+    font-size: 24px;
+    color: #aaa;
+    transition: color 0.2s;
+  }
+  
+  .profile-update-form .social-icons i:hover {
+    color: #fff;
+  }
+    

@@ -1,0 +1,55 @@
+body{
+  background: linear-gradient(90deg, #000000, #1a1a1a, #2a2a2a);
+}
+
+.about-hero {
+  background: linear-gradient(90deg, #000000, #1a1a1a, #2a2a2a);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background: linear-gradient(90deg, #000000, #1a1a1a, #2a2a2a);
+    color: white;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .about-hero-text {
+    flex: 1 1 50%;
+  }
+  
+  .about-hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .about-hero-text p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  .about-hero-image {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+  }
+  
+  @media (max-width: 768px) {
+    .about-hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-hero-text,
+    .about-hero-image {
+      flex: 1 1 100%;
+    }
+  }
+  
