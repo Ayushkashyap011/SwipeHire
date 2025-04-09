@@ -57,4 +57,36 @@
   .save-btn:hover {
     background: linear-gradient(to right, #888, #ccc);
   }
+
+  @media (max-width: 768px) {
+    .profile-update-container {
+      padding: 20px;
+    }
+  
+    .profile-heading {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+  
+    .profile-form input,
+    .profile-form select {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+  
+    .save-btn {
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-update-container {
+      padding: 15px;
+    }
+  
+    .profile-heading {
+      font-size: 1.3rem;
+    }
+  }
+  
   

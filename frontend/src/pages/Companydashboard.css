@@ -1,0 +1,84 @@
+:root {
+    --bg-dark: #0d0d0d;
+    --text-light: #f1f1f1;
+    --accent: #6c63ff;
+    --card-bg: #1a1a1a;
+  }
+  
+  .company-dashboard-container {
+    display: flex;
+    height: 100vh;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+  }
+  
+  /* Sidebar */
+  .company-sidebar {
+    width: 240px;
+    background-color: #111;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .sidebar-logo {
+    font-size: 1.8rem;
+    color: var(--accent);
+    text-align: center;
+  }
+  
+  .sidebar-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0;
+  }
+  
+  .sidebar-nav li {
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .sidebar-nav li:hover {
+    background-color: #222;
+  }
+  
+  /* Main content */
+  .company-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .company-topbar {
+    padding: 1rem 2rem;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .company-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Content Section */
+  .company-content {
+    padding: 2rem;
+    flex: 1;
+    overflow-y: auto;
+    background-color: var(--card-bg);
+  }
+  
+  .company-section {
+    font-size: 1.3rem;
+    color: var(--text-light);
+  }
+  

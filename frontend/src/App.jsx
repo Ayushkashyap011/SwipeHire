@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import StudentSignup from "./pages/StudentSignup";
 import CompanySignup from "./pages/Companysignup";
 import StudentDashboard from "./pages/StudentDashboard";
+import CompanyDashboard from "./pages/CompanyDashboard";
 
 // import './App.css'; // Optional: for global styles like font, bg, etc.
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/studentsignup" element={<StudentSignup />}/>
           <Route path="/companysignup" element={<CompanySignup />} />
           <Route path="/studentdashboard" element={<StudentDashboard/>} />
+          <Route path="/companydashboard" element={<CompanyDashboard/>}/>
 
         </Routes>
       </div>

@@ -1,0 +1,106 @@
+.recommendations-container {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #1e1e1e;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+  }
+  
+  .recommendation-swipe-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 350px;
+    perspective: 1000px;
+  }
+  
+  .recommendation-card {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    min-height: 300px;
+    background: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    font-size: 0.95rem;
+  }
+  
+  .large-card {
+    font-size: 1rem;
+  }
+  
+  .swipe-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .swipe-buttons button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .swipe-buttons button:hover {
+    background: #444;
+    transform: scale(1.05);
+  }
+  
+  .swipe-left {
+    background-color: #a94442;
+  }
+  
+  .swipe-right {
+    background-color: #3c763d;
+  }
+  
+  .swipe-feedback {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #5e17eb;
+    animation: fadeInOut 1s ease-in-out;
+  }
+  
+  .no-more-cards {
+    margin-top: 2rem;
+    color: #aaa;
+    font-size: 1rem;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: scale(0.95); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(1.05); }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .recommendation-card {
+      max-width: 90%;
+      padding: 1rem;
+    }
+  
+    .swipe-buttons {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+  
+    .swipe-buttons button {
+      width: 100%;
+    }
+  }
+  

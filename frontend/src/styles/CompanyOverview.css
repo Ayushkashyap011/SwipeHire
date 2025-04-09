@@ -1,0 +1,49 @@
+:root {
+    --accent: #6c63ff;
+    --card-bg: #222;
+    --text-light: #f1f1f1;
+    --border-radius: 12px;
+  }
+  
+  .overview-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .overview-wrapper h2 {
+    font-size: 2rem;
+    color: var(--accent);
+  }
+  
+  .overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .overview-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .overview-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .stat-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .stat-label {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-light);
+  }
+  

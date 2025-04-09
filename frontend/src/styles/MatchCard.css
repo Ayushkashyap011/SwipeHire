@@ -1,59 +1,93 @@
 .match-card {
-    background-color: #1a1a1a;
-    border: 1px solid #2c2c2c;
-    border-radius: 10px;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #2b2b2b;
+  color: white;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+  transition: 0.3s ease;
+}
+
+.match-header h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.match-header p {
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+}
+
+.match-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 10px;
+}
+
+.message-btn,
+.view-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.message-btn {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.message-btn:hover {
+  background-color: #544eea;
+}
+
+.view-btn {
+  background-color: #444;
+  color: white;
+}
+
+.view-btn:hover {
+  background-color: #666;
+}
+
+.company-message {
+  margin-top: 1rem;
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-left: 3px solid #6c63ff;
+  border-radius: 8px;
+  animation: fadeIn 0.3s ease-in;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .match-card {
+    padding: 1rem;
   }
-  
-  .match-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+
+  .match-header h3 {
+    font-size: 1.2rem;
   }
-  
-  .match-left h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.3rem;
-    color: #ffffff;
+
+  .match-header p {
+    font-size: 0.85rem;
   }
-  
-  .match-left p {
-    margin: 0.2rem 0;
-    font-size: 0.95rem;
-    color: #ccc;
+
+  .match-actions {
+    flex-direction: column;
+    gap: 0.5rem;
   }
-  
-  .location {
-    font-style: italic;
-    color: #888;
+
+  .message-btn,
+  .view-btn {
+    width: 100%;
+    text-align: center;
   }
-  
-  .match-right {
-    text-align: right;
+
+  .company-message {
+    font-size: 0.9rem;
+    padding: 0.8rem;
   }
-  
-  .match-percent {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #4ade80; /* green vibe */
-    margin-bottom: 0.5rem;
-  }
-  
-  .match-btn {
-    padding: 0.5rem 1rem;
-    background-color: #6d28d9;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .match-btn:hover {
-    background-color: #7c3aed;
-  }
-  
+}
